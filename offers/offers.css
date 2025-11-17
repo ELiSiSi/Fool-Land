@@ -1,0 +1,141 @@
+:root {
+  --main-color: #000;
+  --secondary-color: #ffa200;
+  --text-light: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background-color: var(--main-color);
+  width: 100%;
+}
+
+/* CONTAINER */
+.container {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 100px;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(15px);}
+  100% {transform: translateX(0);}
+}
+
+.header .name h1 {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.header .name span {
+  color: var(--text-light);
+}
+
+/* TITLE */
+.title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.title .text {
+  color: var(--text-light);
+  font-size: 45px;
+  transition: 0.4s;
+}
+
+.title .text:hover {
+  letter-spacing: 2px;
+}
+
+/* OFFER SECTION */
+.offer .container {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  width: 90%;
+  color: var(--text-light);
+  font-size: 22px;
+    display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+  gap:20px;
+}
+@media (max-width: 768px) {
+  .offer .container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.offer img {
+  width: 100%;
+   border-radius: 8px;
+
+   margin-bottom: 30px;
+  border: 6px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 162, 0, 0.1);
+}
+
+/* CLICK / WHATSAPP */
+.click .container form {
+  margin-top: 30px;
+}
+
+.click .text {
+  font-size: 35px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.click a {
+  font-size: 28px;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.click a:hover {
+  background-color: var(--text-light);
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .title .text {font-size: 36px;}
+  .offer .container {font-size: 18px;}
+  .click a {font-size: 22px;}
+}
