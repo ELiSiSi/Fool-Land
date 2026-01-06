@@ -1,6 +1,6 @@
 :root {
   --main-color: #ffffff;
-  --secondary-color: #ea0000;
+  --secondary-color: #49DBFF;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-   background-color:  #da0404;
+   background-color:  #092333;
   width: 100%;
 
 }
@@ -34,7 +34,7 @@ body {
 /* start header */
 /* start header */
 .header {
-  background-color: #ffffff;
+  background-color: #49DBFF;
 }
 
 .header .container {
@@ -70,7 +70,11 @@ body {
 }
 
 .header .container .name {
-  color: #ea0000;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header .container .name span {
@@ -138,17 +142,17 @@ body {
 }
 
 .profile .icon {
-  padding-top: 20px;
+  padding-top: 35px;
   word-spacing: 15px;
 }
 
 .profile .icon i {
-  font-size: 30px;
+  font-size: 50px;
   color: #ffffff;
 }
 
 .profile .icon i:hover {
-  font-size: 40px;
+  font-size: 60px;
   color: #FFF;
 }
 
